@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="description" content="Kenzie" />
+    <meta name="author" content="Kenzie" />
+    <meta name="keywords" content="Kenzie" />
+
+    <!-- Title Page-->
+    <title>Kenzie JavaScript Page</title>
+
+    <!-- CSS-->
+    <link href="style.css" rel="stylesheet" media="all" />
+  </head>
+
+  <body>
+    <!-- <h1>Open the Developer Tools to see the console output.</h1>
+    <h3>
+      Either right click and select "Inspect" or use the shortcut Option + ⌘ + J
+      (on macOS), or Shift + CTRL + J (on Windows/Linux).
+    </h3> -->
+    <main>
+      <div id="trivia-card">
+        <div id = "title-card">
+        <h1 id = "category">Trivia Game</h>
+        <h3 id = "score"></h3>
+      </div>
+      <h2 id="clue"></2>
+      <h3 id="answer"></h3>
+      <button id="start-button">Start Game</button>
+      <form id="submit-form">
+        <input
+          type ="text"
+          name ="answer"
+          id = "answer-field"
+          placeholder="What is..."
+          autofocus
+        />
+        <button>Submit</button>
+        
+      </form>
+      <button id = "next-button">Next Question</button>
+      <button id = "restart">Restart Game</button>
+      </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./render.js"></script>
+    <script type="module" src="./APIService.js"></script>
+  </body>
+</html>
